@@ -1,5 +1,4 @@
-﻿#include "../excel-urdu-extension/Excel_DLL.h"
-
+#include "Excel_DLL.h"
 #include <windows.h>
 
 #include "../excel-urdu-extension/Amount.h"
