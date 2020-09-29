@@ -14,9 +14,9 @@ extern "C" __declspec(dllexport) BSTR __stdcall toUrdu(const char* digits)
 	return urduText;
 
 	/*
-	 * String allocated with SysAllocString(BSTR) must explicitly be by Caller using SysFreeString(BSTR)
+	 * String allocated with SysAllocString(BSTR) must explicitly be deallocated by Caller using SysFreeString(BSTR)
 	 * BSTR is VBA's native String (i-e VBA stores strings as BSTR),
-	 * VBA's garbage collector automatically deallocates string (BSTR) so no need to call SysFreeString(BSTR) as VBA side (It not a memory leak)
+	 * VBA's garbage collector automatically deallocates string (BSTR) so no need to call SysFreeString(BSTR) at VBA side (Its not a memory leak)
 	 *
 	 * @link https://stackoverflow.com/questions/14280569/in-vb6-do-i-need-to-call-sysfreestring-on-strings-allocated-with-sysallocstring
 	 * @link https://github.com/ReneNyffenegger/VBA-calls-DLL/issues/1
