@@ -1,5 +1,4 @@
-﻿#include "../excel-urdu-extension/Amount.h"
-
+﻿#include "Amount.h"
 #include <regex>
 #include <iterator>
 #include <windows.h>
