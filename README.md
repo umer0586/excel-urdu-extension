@@ -86,16 +86,15 @@ Replace `<path to urdu64.dll>` with path of `urdu64.dll` file and replace `<Path
 
 To build DLL `(urdu64.dll)` for 64 bit Excel use following `make` command with `mingw-w64` toolchain.
 
-    `make -f build.makefile DLL_64`
-
+`make -f build.makefile DLL_64`
 
 To build DLL `(urdu32.dll)` for 32 bit Excel, make sure you invoke following `make` command with 32 bit `MinGW` toolchain
 
-    `make -f build.makefile DLL_32`
+`make -f build.makefile DLL_32`
 
 Clean builds by
 
-    `make -f build.makefile clean`
+`make -f build.makefile clean`
 
 *Build produces urdu64.dll, urdu32.dll under DLL folder and object files under OBJ folder*
 
