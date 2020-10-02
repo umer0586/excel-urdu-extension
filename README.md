@@ -84,15 +84,14 @@ Replace `<path to urdu64.dll>` with path of `urdu64.dll` file and replace `<Path
 
 # Build DLLs (`urdu64.dll` and `urdu32.dll`) from source
 
-You can simply build `urdu64.dll` (for 64 bit Excel) with `mingw-w64` compiler with following command
+To build DLL (`urdu64.dll`) for 64 bit Excel use following `make` command with `mingw-w64` toolchain.
 
-`g++ -m64 -shared Amount.cpp Excel_DLL.cpp -loleAut32 -static -o urdu64.dll -std=c++11 -Wl,--add-stdcall-alias`
+  `make -f build.makefile DLL_64`
 
-for 32 bit version (`urdu32.dll`) you can use MingGW 32 bit compiler with following command
+To build DLL (`urdu32.dll`) for 32 bit Excel, make sure you invoke following `make` command with 32 bit `MinGW` toolchain
 
-`g++ -shared Amount.cpp Excel_DLL.cpp -loleAut32 -static -o urdu32.dll -std=c++11 -Wl,--add-stdcall-alias`
+  `make -f build.makefile DLL_32`
 
-`-static` flag tells linker to statically link required libraries from `toolchain` *(toolchain are packed with both static and dll version of libraries)* into urdu(32/64).dll.
-If we dont use `-static` flag then we have to distrubute `libstdc++-6.dll` and `libgcc_s_dw2-1.dll` along with `urdu32.dll` and also `libwinpthread-1.dll` when using `mingw-w64 toolchain` 
+
 
 
