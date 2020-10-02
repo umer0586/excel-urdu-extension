@@ -50,7 +50,7 @@ int main() {
 If you compile and run this code you will get `output.txt` file containing the text `23445 = تئیس ہزار چار سو پینتالیس`
 
 
-# To convert amount to Urdu in Excel 
+# How to convert amount in digits/figure to Urdu words in MS Excel
 
 * Download [extension.rar](https://github.com/umer0586/excel-urdu-extension/releases/tag/v1.0)
 * Extract folder to any location
