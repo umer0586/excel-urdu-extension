@@ -1,0 +1,5 @@
+# We could have one .gitignore in the root path which could handle all unneccessary file
+# Since git ignores empty folders so we need to put this .gitignore file here so that our DLL folder no more remains empty 
+
+# Ignore all .dll file in this directory
+*.dll
