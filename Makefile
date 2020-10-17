@@ -1,7 +1,7 @@
 
-# $(CURDIR) is predefine variable which
-OBJ_DIR = $(CURDIR)/OBJ
-DLL_DIR = $(CURDIR)/DLL
+
+OBJ_DIR = ./OBJ
+DLL_DIR = ./DLL
 
 CC = g++
 
