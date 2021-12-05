@@ -1,5 +1,8 @@
 # Convert amount to Urdu in Excel 
 
+![excel capture](https://user-images.githubusercontent.com/35717992/144745325-3d962dbc-6868-4c36-8279-82dd218b8002.JPG)
+
+
 ## Complete Video Tutorial
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/WvcUi0CQaB0/0.jpg)](http://www.youtube.com/watch?v=WvcUi0CQaB0 "Convert amount to Urdu in Excel ")
 
