@@ -9,6 +9,42 @@
 #include<string>
 #include<map>
 
+/*
+
+ int main() {
+
+  Amount amount("23445");
+
+
+  // or you can also do the following
+  // Amount amount;
+  // amount.setDigits("23445");
+
+
+
+  //To get Unicode Urdu string
+  std::wstring amountInUrdu = amount.toUrduUnicode();
+
+  //To get UTF-8 encoded Urdu string
+  std::string amountInUrduUTF8 = amount.toUrduUTF8();
+
+  // If console doesn't support UTF-8 you will not be able to see Urdu text
+  std::cout << amountInUrduUTF8;
+
+  // To check if code works you can write output to file
+  std::ofstream ofs("output.txt");
+
+  ofs << amount.getDigits()  << " = " << amountInUrduUTF8 ;
+
+  ofs.close();
+
+ return 0;
+
+ }
+
+ If you compile and run this code you will get output.txt file containing the text 23445 = تئیس ہزار چار سو پینتالیس
+
+ */
 
 
 class Amount {
