@@ -1,6 +1,6 @@
 # Convert amount to Urdu in Excel 
 
-# Complete Video Tutorial
+## Complete Video Tutorial
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/WvcUi0CQaB0/0.jpg)](http://www.youtube.com/watch?v=WvcUi0CQaB0 "Convert amount to Urdu in Excel ")
 
 This is an **extension/add-in** for **Microsoft Excel** to convert amount in figure to **Urdu** language.
@@ -9,48 +9,6 @@ Amount value ranging from `0 to 9999999999999` **(نناوے کھرب)**  can be
 
 **Excel 2007** and above are supported **(32/64 bit)**
 
-[Amount.cpp](https://github.com/umer0586/excel-urdu-extension/blob/master/Amount.cpp) is a major (C++) class which converts amount from **figure/digits** to **Urdu**
-
-
-```c++
-#include <iostream>
-#include <string>
-#include <fstream>
-#include "Amount.h"
-
-int main() {
-
-  Amount amount("23445");
-
-  /*
-  * or you can also do the following
-  * Amount amount;
-  * amount.setDigits("23445");
-  *
-  */
-
-  //To get Unicode Urdu string
-  std::wstring amountInUrdu = amount.toUrduUnicode();
-
-  //To get UTF-8 encoded Urdu string
-  std::string amountInUrduUTF8 = amount.toUrduUTF8();
-
-  // If console doesn't support UTF-8 you will not be able to see Urdu text
-  std::cout << amountInUrduUTF8;
-
-  // To check if code works you can write output to file
-  std::ofstream ofs("output.txt");
-
-  ofs << amount.getDigits()  << " = " << amountInUrduUTF8 ;
-
-  ofs.close();
-
- return 0;
-
- }
-
-```
-If you compile and run this code you will get `output.txt` file containing the text `23445 = تئیس ہزار چار سو پینتالیس`
 
 
 # How to convert amount in digits/figure to Urdu words in MS Excel
