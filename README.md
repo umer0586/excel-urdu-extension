@@ -24,26 +24,6 @@ Amount value ranging from `0 to 9999999999999` **(نناوے کھرب)**  can be
 
 `Note :` You have to re-run `generate script.exe` whenever you **change the directory** of extracted folder or **rename** that extracted folder
 
-if `generate script.exe` doesn't produce `script.vba` file then you have to do some setups manualy :(
-
-Just create a new `Module` in **Visual Basic Editor** and paste following piece of VBA code in a newly created `Module`
-
-``` VBA
-
-Attribute VB_Name = "loader" 
-#If VBA7 Then 
-   Private Declare PtrSafe Function toUrdu Lib "<Path to urdu64.dll>" (ByVal a As String) As String
-#Else
-   Private Declare Function toUrdu Lib "<Path to urdu32.dll>" (ByVal a As String) As String
-#End If
-
-Function URDU(digits As String)
-   URDU = StrConv(toUrdu(digits), vbFromUnicode)
-End Function
-
-```
-Replace `<path to urdu64.dll>` with path of `urdu64.dll` file and replace `<Path to urdu32.dll>` with path of `urdu32.dll` file
-
 
 
 # How to build DLLs from source
@@ -61,4 +41,7 @@ Clean builds by
     make clean
 
 *Build produces urdu64.dll, urdu32.dll under DLL folder and object files under OBJ folder*
+
+##
+*You can send feedback at umerfarooq2383@gmail.com*
 
