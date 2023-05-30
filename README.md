@@ -16,7 +16,7 @@ Amount value ranging from `0 to 9999999999999` **(نناوے کھرب)**  can be
 
 # How to convert amount in digits/figure to Urdu words in MS Excel
 
-* Download [extension.rar](https://github.com/umer0586/excel-urdu-extension/releases/tag/v1.0)
+* Download [extension.rar](https://github.com/umer0586/excel-urdu-extension/releases)
 * Extract folder to any location
 * Click on `generate script.exe` it will produce `script.vba` file
 * Open Excel then open **Visual Basic Editor** (Alt+F11) select `File > Import File` then choose `script.vba` file created by `generate script.exe`
